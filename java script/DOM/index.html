@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="demo">.....</h1>
+    <h2 class="demo">"""""</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corporis iusto eligendi quod, aut asperiores reprehenderit? Deserunt placeat reprehenderit nesciunt ducimus quae quam quisquam, tempore fugit, velit, corporis voluptatibus quidem.</p>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>service</li>
+        <li>contact</li>
+    </ul>
+    <img src=""
+    <button ondblclick="msg()">Click on me!</button>
+    <script>
+        function msg(){
+            // by id
+        // document.getElementById("demo").innerHTML="Welcome to React";
+            //by class name
+         // let element=document.getElementsByClassName("demo");
+            // for(x in element){
+                // element[0].innerHTML="thanks";
+                // element[x].style.backgroundColor="red";
+            // }
+           
+            // by tag name
+
+            // let element=document.getElementsByTagName("p");
+            // element[1].style.color="green";
+
+            // by querry selectors
+
+            let element=document.querySelector("ul li:nth-child(3)");
+         /*   element.style.color="blue";
+            element.innerHTML="Gallery";*/
+
+            // get attribute
+
+            let element=document.getElementById("img");
+            let result=element.getAttribute("alt");
+            document.getElementById("demo").innerText=result;
+        }
+    </script>
+</body>
+</html>

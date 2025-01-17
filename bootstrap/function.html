@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function in js</title>
+</head>
+<body>
+    <script>
+        function msg(){
+    alert("hello js");
+        }
+        msg();
+
+        // fn decleration for the above code
+
+        let msg1=function(){
+            console.log("Hello js");
+        }
+        msg1();
+        // function with parameter
+
+        let add=function(a,b){
+            let c=a+b;
+            console.log(`additon of two number is ${c}`);
+        }
+            add(4,7);
+
+        // function return 
+        let mul=function(n1,n2){
+            mulresult=n1*n2;
+            return mulresult;
+        }
+        let result=mul(10,5);
+        console.log(result);
+
+        // above code for arrow function
+
+        let add2=(p,s)=>{
+            console.log(`addition of two number p and s is ${p+s}`);
+        }
+            add2(3,6);
+
+        // Wap to find the CI for the given user input values (PA,rate,year)
+
+        let ci=function(p,r,y){
+            console.log("simple intrest is",(p*r*y)/100);
+        }
+        ci(10,10,12);
+
+        //Wap to generate the result for the given arithematic oprator of any number usinf function(calculator)
+        let calc=function(x,y){
+            let ch=prompt("Enter the operation to be perform(+,-,/,*)");
+            switch(ch){
+                case "+": console.log(x+y);
+                break;
+                case "-": console.log(x-y);
+                break;
+                case "/": console.log(x/y);
+                break;
+                case "*": console.log(x*y);
+                break;
+            }
+        }
+        calc(2,6);
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var</title>
+</head>
+<body>
+    <script>
+        //primitive data value types
+        /*let name="Abhay";
+        console.log(typeof(name));
+
+        let mob=23457476;
+        console.log(typeof(mob));
+
+        let isMarried=false;
+        console.log(typeof(isMarried));
+
+        let city=null;
+        console.log(typeof(city))
+
+        let pincode;
+        console.log(typeof(pincode))*/
+
+        //reference type
+
+        //object:- collection of its name and value
+        /*
+        let my_info={
+            name:"nikhil",
+            age:30,
+            mob:63498445798,
+            add:"Delhi",
+            isMarried:false,
+            pincode: null
+        }
+        console.log(my_info.name); // access object name using dot notation
+        console.log(my_info.mob + "and address is " + my_info.add);
+        console.log(my_info['mob']); //access object key value using bracket notation
+        */
+
+        //function
+        /*
+        let msg=function(){
+            console.log("thanks to visit us");
+            console.log(typeof(msg));
+        
+        }
+        msg();*/
+
+     /*   array: collection of anything
+
+        let student=["Prince",
+        30,
+        5267379883,
+        "p3476@gmail.com",
+        false,
+        "Delhi",
+        453783];
+        console.log(student[3]); */
+
+        //creating object having all data type value
+
+        let student={
+            name:["makhan","prince","uday","tarzoin","xyz"],
+            age:30,
+            course: "web",
+            add:{
+                area:"Nehru Place",
+                city:"Delhi",
+                pincode:132394
+            },
+            getinfo:function(){
+                return this.name[1]+"and his age is"+this.age
+            },
+            isMarried:false
+        };
+        console.log(student.getinfo());
+        console.log(student.name[2]);
+        console.log(student.add.city);
+
+    </script>
+</body>
+</html>

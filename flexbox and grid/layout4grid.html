@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding :0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 600px 80px ;
+            gap: 10px;
+            width: auto;
+            height: auto;
+            text-align: center;
+        }
+        #logo,footer{
+            background-color: #ccc;
+        }
+        
+        #logo{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+        }
+        
+
+        section{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        #left ,#right{
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo"><h2>LOGO</h2></div>
+
+        <section>
+            <div id="left"><h2>Header/ Banner</h2></div>
+
+            <div id="right"><h2>Intro text area</h2></div>
+        </section>
+        <section>
+            <div id="right"><h2>box 1</h2></div>
+
+            <div id="left"><h2>box3</h2></div>
+        </section>
+
+        <footer>
+            <h2>FOOTER</h2>
+        </footer>
+    </main>
+</body>
+</html>
